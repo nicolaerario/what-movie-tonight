@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => getRandomMovie());
 function getRandomMovie() {
   let randomId = sampleIds[Math.floor(Math.random() * sampleIds.length)];
 
-  let api = `http://www.omdbapi.com/?apikey=${apiKey}&i=tt${randomId}&plot=short`;
+  let api = `https://www.omdbapi.com/?apikey=${apiKey}&i=tt${randomId}&plot=short`;
 
   fetch(api)
     .then((response) => {
